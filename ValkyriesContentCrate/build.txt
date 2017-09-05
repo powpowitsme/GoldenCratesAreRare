@@ -1,9 +1,0 @@
-author = Valkyrie Valhalla
-
-version = 1.1
-displayName = Valkyrie's Content Crate
-
-homepage = https://forums.terraria.org/index.php?threads/valkyries-content-crate.61721
-hideCode = true
-hideResources = true
-includeSource = false

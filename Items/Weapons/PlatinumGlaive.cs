@@ -18,7 +18,7 @@ namespace ValkyriesContentCrate.Items.Weapons
 			item.useStyle = 5;
 			item.useAnimation = 40;
 			item.useTime = 40;
-			item.shootSpeed = 1.7f;
+			item.shootSpeed = 1.0f;
 			item.knockBack = 3.5f;
 			item.width = 32;
 			item.height = 32;

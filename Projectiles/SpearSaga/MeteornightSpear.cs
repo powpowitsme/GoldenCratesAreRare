@@ -12,7 +12,7 @@ namespace ValkyriesContentCrate.Projectiles.SpearSaga
 	public class MeteornightSpear : ModProjectile
 	{
 	
-        int timer = 20;
+        int timer = 10;
         public override void SetDefaults()
         {
             projectile.CloneDefaults(ProjectileID.Trident);

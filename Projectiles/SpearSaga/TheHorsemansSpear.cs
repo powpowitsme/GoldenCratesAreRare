@@ -12,7 +12,7 @@ namespace ValkyriesContentCrate.Projectiles.SpearSaga
 	public class TheHorsemansSpear : ModProjectile
 	{
 	
-        int timer = 15;
+        int timer = 10;
         public override void SetDefaults()
         {
             projectile.CloneDefaults(ProjectileID.Trident);

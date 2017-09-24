@@ -16,11 +16,11 @@ namespace ValkyriesContentCrate.Items.Weapons.SpearSaga
 
 		public override void SetDefaults()
 		{
-			item.damage = 190;
+			item.damage = 220;
 			item.useStyle = 5;
-			item.useAnimation = 30;
-			item.useTime = 30;
-			item.shootSpeed = 8.7f;
+			item.useAnimation = 40;
+			item.useTime = 40;
+			item.shootSpeed = 6f;
 			item.knockBack = 6.5f;
 			item.width = 50;
 			item.height = 50;

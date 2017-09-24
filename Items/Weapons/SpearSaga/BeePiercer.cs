@@ -18,9 +18,9 @@ public class BeePiercer : ModItem
     {
         item.damage = 20;
         item.useStyle = 5;
-        item.useAnimation = 20;
-        item.useTime = 25;
-        item.shootSpeed = 6.0f;
+        item.useAnimation = 50;
+        item.useTime = 50;
+        item.shootSpeed = 3f;
         item.knockBack = 4f;
         item.width = 70;
         item.height = 70;

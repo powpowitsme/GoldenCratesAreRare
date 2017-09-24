@@ -19,8 +19,8 @@ namespace ValkyriesContentCrate.Items.Weapons.ReferenceWeapons
 			item.ranged = true;
 			item.width = 82;
 			item.height = 36;
-			item.useTime = 50;
-			item.useAnimation = 50;
+			item.useTime = 30;
+			item.useAnimation = 30;
 			item.useStyle = 5;
 			item.noMelee = true;
 			item.knockBack = 4;
@@ -49,30 +49,19 @@ namespace ValkyriesContentCrate.Items.Weapons.ReferenceWeapons
 			return new Vector2(-40, 3);
 		}
 
-			 public static Vector2[] randomSpread(float speedX, float speedY, int angle, int num)
-        {
-            var posArray = new Vector2[num];
-            float spread = (float)(angle * 0.0774532925);
-            float baseSpeed = (float)System.Math.Sqrt(speedX * speedX + speedY * speedY);
-            double baseAngle = System.Math.Atan2(speedX, speedY);
-            double randomAngle;
-            for (int i = 0; i < num; ++i)
-            {
-                randomAngle = baseAngle + (Main.rand.NextFloat() - 0.5f) * spread;
-                posArray[i] = new Vector2(baseSpeed * (float)System.Math.Sin(randomAngle), baseSpeed * (float)System.Math.Cos(randomAngle));
-            }
-            return (Vector2[])posArray;
-        }
-
-        public override bool Shoot(Player player, ref Vector2 position, ref float speedX, ref float speedY, ref int type, ref int damage, ref float knockBack)
-        {
-            Vector2[] speeds = randomSpread(speedX, speedY, 8, 6);
-            for (int i = 0; i < 5; ++i)
-            {
-                Projectile.NewProjectile(position.X, position.Y, speeds[i].X, speeds[i].Y, type, damage, knockBack, player.whoAmI);
-            }
-            return false;
+		public override bool Shoot(Player player, ref Vector2 position, ref float speedX, ref float speedY, ref int type, ref int damage, ref float knockBack)
+		{
+			int numberProjectiles = 7 + Main.rand.Next(2);
+			for (int i = 0; i < numberProjectiles; i++)
+			{
+				Vector2 perturbedSpeed = new Vector2(speedX, speedY).RotatedByRandom(MathHelper.ToRadians(10));
+				float scale = 0.9f - (Main.rand.NextFloat() * .4f);
+				perturbedSpeed = perturbedSpeed * scale; 
+				Projectile.NewProjectile(position.X, position.Y, perturbedSpeed.X, perturbedSpeed.Y, type, damage, knockBack, player.whoAmI);
+			}
+			return false;
 		}
+
 
 		public override bool ConsumeAmmo(Player player)
 		{

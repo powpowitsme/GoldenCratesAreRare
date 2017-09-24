@@ -16,7 +16,7 @@ namespace ValkyriesContentCrate.Projectiles.SpearSaga
 			DisplayName.SetDefault("Bee Piercer");
 		}
 		
-		int timer = 20;
+		int timer = 10;
         public override void SetDefaults()
         {
             projectile.CloneDefaults(ProjectileID.Trident);
@@ -32,7 +32,7 @@ namespace ValkyriesContentCrate.Projectiles.SpearSaga
                 if (timer == 0)
                 {
                     Projectile.NewProjectile(projectile.Center.X, projectile.Center.Y, projectile.velocity.X, projectile.velocity.Y, 469, 15, projectile.knockBack, projectile.owner, 0f, 0f);
-                    timer = 20;
+                    timer = 30;
                 }
             }
         }

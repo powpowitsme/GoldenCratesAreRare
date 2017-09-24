@@ -12,7 +12,7 @@ namespace ValkyriesContentCrate.Projectiles.SpearSaga
 	public class BeamSpear : ModProjectile
 	{
 	
-        int timer = 20;
+        
         public override void SetDefaults()
         {
             projectile.CloneDefaults(ProjectileID.Trident);
@@ -20,6 +20,7 @@ namespace ValkyriesContentCrate.Projectiles.SpearSaga
             aiType = ProjectileID.Trident;
         }
 
+        int timer = 10;
         public override void AI()
         {
             {
@@ -28,7 +29,7 @@ namespace ValkyriesContentCrate.Projectiles.SpearSaga
                 if (timer == 0)
                 {
                     Projectile.NewProjectile(projectile.Center.X, projectile.Center.Y, projectile.velocity.X, projectile.velocity.Y, 116, 40, projectile.knockBack, projectile.owner, 0f, 0f);
-                    timer = 20;
+                    timer = 60;
                 }
             }
         }

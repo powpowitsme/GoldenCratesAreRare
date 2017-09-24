@@ -16,9 +16,9 @@ namespace ValkyriesContentCrate.Items.Weapons.SpearSaga
 		{
 			item.damage = 20;
 			item.useStyle = 5;
-			item.useAnimation = 40;
-			item.useTime = 40;
-			item.shootSpeed = 4.0f;
+			item.useAnimation = 17;
+			item.useTime = 17;
+			item.shootSpeed = 6.0f;
 			item.knockBack = 3.5f;
 			item.width = 32;
 			item.height = 32;

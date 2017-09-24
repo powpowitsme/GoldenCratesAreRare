@@ -10,7 +10,6 @@ namespace ValkyriesContentCrate
 			{
 				Autoload = true,
 				AutoloadGores = true,
-				AutoloadSounds = true
 			};
 		}
 	}

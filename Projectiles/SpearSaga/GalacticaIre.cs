@@ -14,7 +14,7 @@ namespace ValkyriesContentCrate.Projectiles.SpearSaga
 			DisplayName.SetDefault("Galactic Ire");
 		}
 
-        int timer = 3;
+        int timer = 1;
         public override void SetDefaults()
         {
             projectile.CloneDefaults(ProjectileID.Trident);

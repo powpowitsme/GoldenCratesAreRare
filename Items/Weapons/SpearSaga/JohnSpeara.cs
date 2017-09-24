@@ -11,7 +11,7 @@ namespace ValkyriesContentCrate.Items.Weapons.SpearSaga
 		public override void SetStaticDefaults()
 		{
 			DisplayName.SetDefault("WWE SUPERSTAR JOHN SPEARA");
-			Tooltip.SetDefault("'JOHN SPEARA'S ABS CAN DESTORY GODS'");
+			Tooltip.SetDefault("'JOHN SPEARA'S ABS CAN DESTROY GODS'");
 		}
 
 		public override void SetDefaults()

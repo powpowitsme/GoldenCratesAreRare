@@ -16,7 +16,7 @@ namespace ValkyriesContentCrate.Projectiles.SpearSaga
 			DisplayName.SetDefault("Ice Spear");
 		}
 		
-		int timer = 20;
+		int timer = 10;
         public override void SetDefaults()
         {
             projectile.CloneDefaults(ProjectileID.Trident);

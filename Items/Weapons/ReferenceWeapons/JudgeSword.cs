@@ -17,8 +17,8 @@ namespace ValkyriesContentCrate.Items.Weapons.ReferenceWeapons
 		{
 			item.damage = 200;
 			item.melee = true;			
-			item.width = 100;			
-			item.height = 100;			
+			item.width = 50;			
+			item.height = 50;			
 			item.useTime = 6;	
 			item.useAnimation = 6;
 			item.useStyle = 1;			
@@ -42,7 +42,7 @@ namespace ValkyriesContentCrate.Items.Weapons.ReferenceWeapons
 		{
 			if (Main.rand.Next(3) == 0)
 			{
-				int dust = Dust.NewDust(new Vector2(hitbox.X, hitbox.Y), hitbox.Width, hitbox.Height, 219, 0f, 0f, 0, default(Color), 1f);
+				int dust = Dust.NewDust(new Vector2(hitbox.X, hitbox.Y), hitbox.Width, hitbox.Height, 221, 0f, 0f, 0, default(Color), 1f);
 			}
 		}
 	}

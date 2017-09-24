@@ -12,7 +12,7 @@ namespace ValkyriesContentCrate.Projectiles.SpearSaga
 	public class Starstriker : ModProjectile
 	{
 
-        int timer = 20;
+        int timer = 10;
         public override void SetDefaults()
         {
             projectile.CloneDefaults(ProjectileID.Trident);
@@ -35,7 +35,7 @@ namespace ValkyriesContentCrate.Projectiles.SpearSaga
 
 		public override bool PreAI()
         {
-            int dust = Dust.NewDust(projectile.position, projectile.width, projectile.height, 27, projectile.velocity.X, projectile.velocity.Y);
+            int dust = Dust.NewDust(projectile.position, projectile.width, projectile.height, 72, projectile.velocity.X, projectile.velocity.Y);
             Main.dust[dust].scale = 1f;
             Main.dust[dust].noGravity = true;
             Main.dust[dust].noLight = false;

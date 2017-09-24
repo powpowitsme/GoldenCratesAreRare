@@ -13,7 +13,7 @@ namespace ValkyriesContentCrate.Projectiles.SpearSaga
 	public class DragonsBane : ModProjectile
 	{
 	
-        int timer = 8;
+        int timer = 4;
         public override void SetDefaults()
         {
             projectile.CloneDefaults(ProjectileID.Trident);

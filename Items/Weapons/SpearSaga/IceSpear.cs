@@ -16,14 +16,14 @@ namespace ValkyriesContentCrate.Items.Weapons.SpearSaga
 		{
 			item.damage = 14;
 			item.useStyle = 5;
-			item.useAnimation = 40;
-			item.useTime = 40;
-			item.shootSpeed = 4.0f;
+			item.useAnimation = 20;
+			item.useTime = 20;
+			item.shootSpeed = 5.0f;
 			item.knockBack = 3.5f;
 			item.width = 32;
 			item.height = 32;
 			item.scale = 1f;
-			item.rare = 0;
+			item.rare = 1;
 			item.UseSound = SoundID.Item1;
 			item.shoot = mod.ProjectileType<Projectiles.SpearSaga.IceSpear>();
 			item.value = Item.sellPrice(0, 0, 3, 0);

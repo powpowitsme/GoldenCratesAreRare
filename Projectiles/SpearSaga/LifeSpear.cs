@@ -16,7 +16,7 @@ namespace ValkyriesContentCrate.Projectiles.SpearSaga
 			DisplayName.SetDefault("Life Spear");
 		}
 		
-        int timer = 10;
+        int timer = 5;
         public override void SetDefaults()
         {
             projectile.CloneDefaults(ProjectileID.Trident);

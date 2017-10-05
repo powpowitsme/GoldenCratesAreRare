@@ -16,7 +16,7 @@ namespace WNDD.Items.Weapons.Guns
 
 		public override void SetDefaults()
 		{
-			item.damage = 26;
+			item.damage = 28;
 			item.ranged = true;
 			item.width = 50;
 			item.height = 22;
@@ -25,12 +25,13 @@ namespace WNDD.Items.Weapons.Guns
 			item.useStyle = 5;
 			item.noMelee = true;
 			item.knockBack = 7;
+            item.crit = 30;
 			item.rare = 4;
 			item.UseSound = SoundID.Item36;
 			item.autoReuse = false;
 			item.value = Item.sellPrice(0, 5, 0, 0);
             item.shoot = 166;
-			item.shootSpeed = 22f;
+			item.shootSpeed = 30f;
             item.useAmmo = AmmoID.Snowball;
 		}
 
@@ -39,6 +40,8 @@ namespace WNDD.Items.Weapons.Guns
 			ModRecipe recipe = new ModRecipe(mod);
             recipe.AddIngredient(ItemID.Shotgun);
             recipe.AddIngredient(ItemID.FrostCore, 1);
+            recipe.AddIngredient(ItemID.LightShard, 2);
+            recipe.AddIngredient(ItemID.SoulofLight, 10);
             recipe.AddTile(TileID.MythrilAnvil);
 			recipe.SetResult(this);
 			recipe.AddRecipe();
@@ -47,7 +50,7 @@ namespace WNDD.Items.Weapons.Guns
 
         public override bool Shoot(Player player, ref Vector2 position, ref float speedX, ref float speedY, ref int type, ref int damage, ref float knockBack)
         {
-            int numberProjectiles = 5 + Main.rand.Next(2);
+            int numberProjectiles = 6 + Main.rand.Next(2);
             for (int i = 0; i < numberProjectiles; i++)
             {
                 Vector2 perturbedSpeed = new Vector2(speedX, speedY).RotatedByRandom(MathHelper.ToRadians(10));

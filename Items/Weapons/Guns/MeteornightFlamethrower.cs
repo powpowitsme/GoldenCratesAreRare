@@ -3,7 +3,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace ValkyriesContentCrate.Items.Weapons.Guns
+namespace WNDD.Items.Weapons.Guns
 {
 	public class MeteornightFlamethrower : ModItem
 	{

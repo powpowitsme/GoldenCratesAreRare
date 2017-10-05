@@ -3,9 +3,9 @@ using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
-using ValkyriesContentCrate.Items;
+using WNDD.Items;
 
-namespace ValkyriesContentCrate.Items.Weapons.ReferenceWeapons
+namespace WNDD.Items.Weapons.ReferenceWeapons
 {
     public class ArcaTitron : ModItem
     {

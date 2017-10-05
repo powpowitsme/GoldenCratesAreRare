@@ -4,9 +4,9 @@ using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
-using ValkyriesContentCrate.Items;
+using WNDD.Items;
 
-namespace ValkyriesContentCrate.Items.Weapons.SpearSaga
+namespace WNDD.Items.Weapons.SpearSaga
 {
     public class BeamSpear : ModItem
     {

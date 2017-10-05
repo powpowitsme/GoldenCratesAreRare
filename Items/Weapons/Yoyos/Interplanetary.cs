@@ -2,7 +2,7 @@
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace ValkyriesContentCrate.Items.Weapons.Yoyos
+namespace WNDD.Items.Weapons.Yoyos
 {
 	public class Interplanetary : ModItem
 	{

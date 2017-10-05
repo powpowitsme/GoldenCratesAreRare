@@ -2,7 +2,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace ValkyriesContentCrate.Items.Materials
+namespace WNDD.Items.Materials
 {
 	public class MeteornightSpar : ModItem
 	{

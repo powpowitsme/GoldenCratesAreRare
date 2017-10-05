@@ -3,7 +3,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace ValkyriesContentCrate.Items.Weapons.ReferenceWeapons
+namespace WNDD.Items.Weapons.ReferenceWeapons
 {
 	public class RedMagesArm : ModItem
 	{

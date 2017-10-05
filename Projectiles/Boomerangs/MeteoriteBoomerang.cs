@@ -5,7 +5,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
  
-namespace ValkyriesContentCrate.Projectiles.Boomerangs
+namespace WNDD.Projectiles.Boomerangs
 {
     public class MeteoriteBoomerang : ModProjectile
     {

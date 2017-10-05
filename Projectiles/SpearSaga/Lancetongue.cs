@@ -8,7 +8,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace ValkyriesContentCrate.Projectiles.SpearSaga
+namespace WNDD.Projectiles.SpearSaga
 {
 	public class Lancetongue : ModProjectile
 	{

@@ -3,7 +3,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace ValkyriesContentCrate.Items.Weapons.Swung
+namespace WNDD.Items.Weapons.Swung
 {
 	public class GoldiumClaymore : ModItem
 	{
@@ -23,7 +23,7 @@ namespace ValkyriesContentCrate.Items.Weapons.Swung
 			item.useAnimation = 60;
 			item.useStyle = 1;			
 			item.knockBack = 12;			
-			item.value = Item.sellPrice(10, 0, 0, 0);			
+			item.value = Item.sellPrice(0, 1, 0, 0);			
 			item.rare = 1;
 			item.UseSound = SoundID.Item1;
 			item.autoReuse = false;

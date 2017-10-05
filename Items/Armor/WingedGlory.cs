@@ -2,7 +2,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace ValkyriesContentCrate.Items.Armor
+namespace WNDD.Items.Armor
 {
 	[AutoloadEquip(EquipType.Head)]
 	public class WingedGlory : ModItem

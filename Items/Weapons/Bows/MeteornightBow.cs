@@ -3,7 +3,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace ValkyriesContentCrate.Items.Weapons.Bows
+namespace WNDD.Items.Weapons.Bows
 
 {
 	public class MeteornightBow : ModItem

@@ -1,10 +1,10 @@
 ﻿using Microsoft.Xna.Framework;
-using ValkyriesContentCrate.Projectiles;
+using WNDD.Projectiles;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace ValkyriesContentCrate.Items.Weapons.SpearSaga
+namespace WNDD.Items.Weapons.SpearSaga
 {
 	public class BreakerSpear : ModItem
 	{

@@ -4,7 +4,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace ValkyriesContentCrate.Projectiles.Yoyos
+namespace WNDD.Projectiles.Yoyos
 {
 	class Interplanetary : ModProjectile
 	{

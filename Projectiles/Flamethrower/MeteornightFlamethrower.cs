@@ -5,7 +5,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
  
-namespace ValkyriesContentCrate.Projectiles.Flamethrower   
+namespace WNDD.Projectiles.Flamethrower   
 {
     public class MeteornightFlamethrower : ModProjectile
     {

@@ -1,9 +1,9 @@
-﻿using ValkyriesContentCrate.Projectiles;
+﻿using WNDD.Projectiles;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace ValkyriesContentCrate.Items.Weapons.SpearSaga
+namespace WNDD.Items.Weapons.SpearSaga
 {
 	public class IceSpear : ModItem
 	{
@@ -14,7 +14,7 @@ namespace ValkyriesContentCrate.Items.Weapons.SpearSaga
 
 		public override void SetDefaults()
 		{
-			item.damage = 14;
+			item.damage = 15;
 			item.useStyle = 5;
 			item.useAnimation = 20;
 			item.useTime = 20;

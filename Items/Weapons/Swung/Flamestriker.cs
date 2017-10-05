@@ -3,7 +3,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace ValkyriesContentCrate.Items.Weapons.Swung
+namespace WNDD.Items.Weapons.Swung
 {
 	public class Flamestriker : ModItem
 	{

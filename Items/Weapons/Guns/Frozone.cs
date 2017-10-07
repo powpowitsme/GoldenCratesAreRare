@@ -17,7 +17,7 @@ namespace WNDD.Items.Weapons.Guns
 		public override void SetDefaults()
 		{
 			item.damage = 28;
-			item.ranged = true;
+			item.magic = true;
 			item.width = 50;
 			item.height = 22;
 			item.useTime = 46;
@@ -30,9 +30,9 @@ namespace WNDD.Items.Weapons.Guns
 			item.UseSound = SoundID.Item36;
 			item.autoReuse = false;
 			item.value = Item.sellPrice(0, 5, 0, 0);
-            item.shoot = 166;
+            item.shoot = mod.ProjectileType<Projectiles.IceBullet>();
 			item.shootSpeed = 30f;
-            item.useAmmo = AmmoID.Snowball;
+            item.mana = 10;
 		}
 
 		public override void AddRecipes()
@@ -65,5 +65,6 @@ namespace WNDD.Items.Weapons.Guns
         {
             return new Vector2(-3, -1);
         }
+
 	}
 }
